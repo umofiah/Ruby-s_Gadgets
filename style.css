@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.headertext{
+    
+}
+
+.headertext p i{
+    font-style: italic;
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: whitesmoke;
+    width: 100%;
+    padding-inline: 30px;
+   padding-block: 10px;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding-inline: 20px;
+}
+
+.mainphoto{
+    padding-top: 40px;
+    width: 100%;
+    height: 500px;
+}
+ 
+h2{
+   font-size: 20px; 
+   border: 2px solid dodgerblue;
+   background-color: gray;
+   padding: 3px;
+   color: white;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 2px;
+}
+
+#top{
+    color: black;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-inline: 20px;
+    text-align: left;
+}
+
+#infinix, #tecno, #samsung, #iphone{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center ;
+    align-items: center;
+}
+
+.infinixdiv, .tecnodiv, .samsungdiv, .iphonediv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.infinixdiv p, .tecnodiv p, .samsung p, .iphone p{
+   padding-top: 10px;
+   padding-bottom: 10px;
+    
+}
+
+.infinixdiv:hover, .tecnodiv:hover, .samsungdiv:hover, .iphonediv:hover{
+    border: 1px solid dodgerblue;
+}
+
+main i{
+    color: black;
+    font-size: 20px;
+}
+
+span{
+    color: black;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 12px;
+}
+
+ul a:active{
+    background-color: dodgerblue;
+    color: white;
+}
+
+
+a:hover{
+    color: dodgerblue;
+    background-color: white;
+}
+
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: lightblue;
+    width: 500px;
+    height: 300px;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+.formdiv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    color: black;
+    font-size: 20px;
+    padding-inline: 20px;
+   
+}
+
+.formdiv h6{
+    width: 60px;
+}
+
+input{
+    width: 75%;
+    height: 20px;
+    padding: 5px;
+}
+input[type=submit]{
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+input[type=submit]:hover{
+    background-color: black;
+}
+
+input[type=submit]:active{
+    background-color: dodgerblue;
+    color: white;
+}
+
+#contact{
+    background-color: whitesmoke;
+    /* background: linear-gradient(to right, dodgerblue, blue); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    margin-top: 40px;
+}
+
+#contact h4{
+    font-size: 20px;
+    padding: 20px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: left;
+    padding:2px;
+    padding-top:20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+footer h2{
+    width: 30px;
+}
+
+footer p:hover{
+    color: dodgerblue;
+}
+
+.footerdiv{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding-inline: 10px;
+   justify-content: center;
+   align-items: center;
+}
+
+.copyright, .copyright:hover{
+    font-size: 25px;
+    color: white;
+}
+
+button{
+    height: 30px;
+    background-color: lightskyblue;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding-inline: 15px;
+}
+
+button:hover{
+    padding-inline: 40px;
+    height: 40px;
+    background-color: gray;
+    border: 1px solid dodgerblue;
+}
+
+button:active{
+    color: black;
+}
+
+h1{
+    margin: 20px;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 768px) {
+    header, ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 4;
+        align-items: center;
+        padding: 2px;
+        position: sticky;
+        float: right;
+        font-size: 2px;
+    }
+
+    header h2{
+        display: flex;
+        justify-content: center;
+        align-items: ;
+    }
+
+    .mainphoto{
+        width: 100%;
+        height: 200px;
+    }
+
+    #top{
+        font-size: 20px;
+    }
+
+    #contact{
+        align-items: center;
+        justify-content: center; 
+        
+    }
+
+    form{
+      align-content: center;
+      justify-content: center; 
+     
+    }
+
+    .formdiv{
+        display: block;
+        margin-top: 0; 
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+    }
+
+    .copyright{
+        font-size: 18px;
+    }
+
+h1{
+    font-size: smaller;
+    padding-left: 20px;
+}
+#top{
+    font-size: 15px;
+}
+
+.headertext{
+    margin-top: 40px;
+    display: flex;
+    font-size: 10px;
+}
+
+.headertext p>i{
+}
+}
